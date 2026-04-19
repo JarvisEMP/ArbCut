@@ -4,6 +4,70 @@ Newest entries at the top. Each session appends its own dated block.
 
 ---
 
+## 2026-04-19 — Hero photo: tall-portrait desktop layout restored
+
+- Desktop ≥1024px: grid changed from `1fr 1fr` to `1fr auto` — photo column auto-sizes to rendered image width
+- Photo uses `width: auto; max-height: calc(100vh - var(--header-height) - 160px)` — fills viewport height at natural portrait aspect ratio, zero cropping
+- Rust border (`2px solid #B85B32`), `border-radius: 4px`, offset shadow `6px 6px 0 0 rgba(184,91,50,0.25)` restored on desktop
+- Tablet 768–1023px: `1fr 1fr` grid, photo `width: 100%; height: auto` — full portrait, no crop, no border
+- Mobile ≤767px: unchanged completely
+- Hero photo confirmed portrait: 1705×2048 (ratio 0.83)
+
+---
+
+## 2026-04-19 — Client review: 9 content & structural updates
+
+### Change 1 — Hero copy
+- Subheadline replaced with full client text: "Kvalifikuotas arboristas aukštalipys su komanda galime jums padėti: pjauname pavojingus medžius, genime, šaliname kelmus, atliekame kitus darbus aukštyje iki 20 m su autobokšteliu, aukščiau specialia alpinistine įranga ir virvėmis."
+- Trust line: "Veikiame visoje Lietuvoje…" → "Dirbame visoje Lietuvoje • Saugiai, atsakingai ir švariai"
+
+### Change 2 — Contact strip: mobile email fix
+- Added `@media (max-width: 767px)` rule: `.contact-card__value` font-size `0.88rem`, `white-space: nowrap`, `overflow: hidden`, `text-overflow: ellipsis`
+- Prevents email address from wrapping to two lines at 320–414px
+
+### Change 3 — About: new copy, 13 years, LT stat
+- Replaced both body paragraphs with client-supplied Lithuanian copy
+- First paragraph: lead/action. Second: supporting detail (`about__body--detail`) — 0.95em, 0.8 opacity, slightly closer gap
+- Stat changed: `15+` → `13+` years (client confirmed). LT stat unchanged.
+- Added `.about__body--detail` CSS class
+
+### Change 4 — Services: remove "Medžių pjovimas", update Aplinkos tvarkymas
+- Removed "Medžių pjovimas" featured card — client flagged as duplicate
+- Featured row: 2 cards (Pavojingų medžių šalinimas + Darbai su autobokšteliu)
+- CSS: `.services__featured` ≥900px changed from `repeat(3, 1fr)` to `repeat(2, 1fr)`
+- "Aplinkos tvarkymas" desc updated with Kauno raj. scope + fiskaru
+- Total: 7 service cards
+
+### Change 5 — Gallery: unified captions
+- All 12 photos: `data-caption`, `alt`, `aria-label`, and caption span → "ArbCut atliktų darbų nuotrauka"
+
+### Change 6 — "Kodėl ArbCut" Švariai card
+- New text: "Po darbų galime išvešti šakas ir medieną, sutvarkyti aplinką pagal jūsų poreikius ir susitarimą."
+
+### Change 7 — FAQ: medieną answer updated
+- Geographic-scoped: Kaunas/Kaunas region delivery only, explicit caveat for further distances
+
+### Change 8 — Footer: remove deleted service link
+- "Medžių pjovimas" removed — 7 footer service links remain
+
+### Change 9 — Shredding sweep + parity audit
+- Grep result: `smulkin` only in About P1 (client's own wording — intentional exception)
+- Featured grid 2-col correct; secondary 5-col at ≥1024px already in place
+- Contact strip ellipsis safety net added for narrow viewports
+- No horizontal overflow issues found
+
+### Content needed from client
+1. `YOUR_WEB3FORMS_ACCESS_KEY` — both forms
+2. `redirect` hidden inputs — absolute URL once domain is live
+3. Confirm FAQ insurance item (commented out in HTML)
+4. Optional: professional portrait photo of Mantas
+
+### Resolved this session
+- ~~Years of experience~~ — confirmed **13**
+- ~~Gallery captions~~ — unified per client preference
+
+---
+
 ## 2026-04-19 — Replaced Fraunces with Playfair Display
 - Replaced Fraunces with Playfair Display due to missing Lithuanian ū glyph in Fraunces. Updated Google Fonts import in `index.html` and `success.html`, `--font-display` in `styles.css`, and all 6 SVG logo files. Zero remaining Fraunces references in code.
 
@@ -384,3 +448,5 @@ Format:
 - Wrote `CLAUDE.md` (project context for every session).
 - Wrote `PRD.md` v1.0 (scope, sections, copy, design system).
 - No code written yet.
+
+//Prideti nuotrauka ir pakeisti pirma sakini i Kvalifikuotas arboristas aukštalipys - saugiai, atsakingai ir iki galo.

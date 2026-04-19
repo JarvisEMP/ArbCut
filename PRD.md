@@ -1,6 +1,6 @@
 # PRD — ArbCut Website
 
-**Version:** 1.4
+**Version:** 1.5
 **Last updated:** 2026-04-19
 **Owner:** [your name]
 **Client:** Mantas Gerulis — ArbCut (arborist / tree-care services, Lithuania)
@@ -43,7 +43,7 @@ Order of sections top-to-bottom:
 2. **Hero**
 3. **Quick contact strip** (phone + email as visible cards)
 4. **About** ("Apie mus" / "ARBCUT")
-5. **Services** ("Paslaugos") — 8 cards
+5. **Services** ("Paslaugos") — 7 cards
 6. **Gallery** ("Darbų galerija") — masonry/grid with lightbox
 7. **Why ArbCut** (trust section — NEW vs. competitor)
 8. **FAQ** (NEW vs. competitor — handles objections)
@@ -76,14 +76,14 @@ Minimal thank-you page shown after form submission. Says "Ačiū, susisieksime a
 
 - **Full-viewport height:** `min-height: 100vh` on all breakpoints.
 - **Solid background:** `--color-forest-deep` (#142620). No gradient overlay.
-- **CSS Grid split:** `1fr minmax(280px, 440px)` desktop (text fluid, photo portrait-framed), `1fr minmax(240px, 360px)` tablet (768–1023px), single column mobile (photo below text, `order: 1`).
-- **Supporting photo** (`assets/images/hero.jpg`): portrait-frame treatment on desktop — `height: auto; object-fit: contain; max-width: 440px` — displays at natural aspect ratio, no cropping. Rust 1.5px border, offset rust shadow `6px 6px 0 0 rgba(184,91,50,0.25)`, `border-radius: 4px`. Mobile: `max-width: 400px; height: auto; object-fit: contain`.
+- **CSS Grid split:** `1fr auto` desktop ≥1024px (text fluid, photo auto-sized to height), `1fr 1fr` tablet (768–1023px), single column mobile (photo below text, `order: 1`).
+- **Supporting photo** (`assets/images/2b536cb7-4a17-4d5d-9cad-8733ba243b27.jpg`): desktop — `width: auto; max-height: calc(100vh - header - 160px)` — fills viewport height at natural portrait aspect ratio, no cropping. Rust 2px border, offset shadow `6px 6px 0 0 rgba(184,91,50,0.25)`, `border-radius: 4px`. Tablet: `width: 100%; height: auto` (full portrait, no crop). Mobile: `max-width: 400px; height: auto; border: 1.5px rust; no shadow`.
 - **Text block:** grid column left, vertically centered. Mobile: centered, single column.
 - Small rust horizontal rule (40×2px) above headline — editorial flourish. Centered on mobile.
 - **Headline (H1):** `Medžių priežiūra aukštumoje — saugiai, atsakingai, iki galo.` `font-size: clamp(2.75rem, 7vw, 6rem)`.
-- **Subheadline:** `Kvalifikuotas arboristas aukštalipys su komanda…` `font-size: clamp(1.1rem, 1.5vw, 1.35rem)`.
+- **Subheadline:** `Kvalifikuotas arboristas aukštalipys su komanda galime jums padėti: pjauname pavojingus medžius, genime, šaliname kelmus, atliekame kitus darbus aukštyje iki 20 m su autobokšteliu, aukščiau specialia alpinistine įranga ir virvėmis.` `font-size: clamp(1.1rem, 1.5vw, 1.35rem)`.
 - **Two CTAs:** Primary `Skambinti +370 603 66901` (rust), Secondary `Palikti užklausą` (outline-light, opens modal §4.12). Stacked full-width below 480px.
-- Trust line: `Veikiame visoje Lietuvoje • Dirbame saugiai ir švariai`.
+- Trust line: `Dirbame visoje Lietuvoje • Saugiai, atsakingai ir švariai`.
 - Animated scroll chevron at bottom-center (absolutely positioned, bob animation).
 
 ### 4.3 Quick contact strip
@@ -99,9 +99,11 @@ Two cards side by side (stack on mobile), full-width band with a slightly lighte
 - 40×2px rust rule above the eyebrow.
 - Small eyebrow label: `APIE MUS`
 - H2: `ARBCUT — medžių priežiūros meistrai`
-- Body copy: two short paragraphs.
+- Body copy: two paragraphs. First (lead): client's voice, action-oriented. Second (`about__body--detail`): slightly smaller + muted, reads as supporting detail.
+  - P1: `Kvalifikuotas arboristas aukštalipys su komanda esame pasiruošę jums padėti! Nupjausime, susmulkinsime, šakas sudėsime krūvomis, panaikinsime kelmą, sutvarkysime aplinką, viską galime išvežti.`
+  - P2: `Pavojų keliančių avarinių medžių pjovimas prie pastatų ar elektros laidų ir kitų kliūčių…` (full text in HTML)
 - **Three stat blocks** — large Playfair Display serif numbers `clamp(2.75rem, 5vw, 4.5rem)` (intentionally bold, visual anchor):
-  - `{{ METAI_PATIRTIES }}+` / `metų patirtis` — **placeholder, client must confirm**
+  - `13+` / `metų patirtis` — **confirmed by client**
   - `20m` / `Aukštyje su nuosavu autobokšteliu`
   - `LT` / `Išvykstame visur Lietuvoje`
   - Centered within each column. Thin `var(--color-moss)` vertical dividers between stats.
@@ -112,8 +114,8 @@ Two cards side by side (stack on mobile), full-width band with a slightly lighte
 ### 4.5 Services — "Paslaugos" — featured + grid hybrid
 
 - H2: `Paslaugos` / Eyebrow: `KĄ DAROME`
-- **Top row — 3 featured cards** (money-making services): Medžių pjovimas, Pavojingų medžių šalinimas, Darbai su autobokšteliu.
-  - 3-col desktop (≥900px), 2-col tablet (≥640px), 1-col mobile.
+- **Top row — 2 featured cards**: Pavojingų medžių šalinimas, Darbai su autobokšteliu. ("Medžių pjovimas" removed — redundant with Pavojingų medžių šalinimas per client review.)
+  - 2-col desktop (≥640px), 1-col mobile.
   - Each card: background photo fills card, bottom-anchored dark gradient overlay, title + desc pinned to bottom. Icon tucked top-right (26px, semi-transparent).
   - Hover: overlay darkens, card lifts 4px.
   - Images: `Work1.jpg` / `Laidai.jpg` / `Technika.jpg`.
@@ -123,25 +125,24 @@ Two cards side by side (stack on mobile), full-width band with a slightly lighte
 - Hover state on secondary cards: card lifts, icon shifts to rust, border glow.
 - **Featured cards:** `border: none` (not `border-color: transparent`) — transparent border caused a 1px gap at card edges where the CSS background-image doesn't extend into the border area.
 
-Cards (titles + descriptions locked from competitor, lightly refined):
+Cards (7 total after client review — "Medžių pjovimas" removed as duplicate):
 
-1. **Medžių pjovimas** — Saugus medžių pjovimas įvairiomis sąlygomis — kiemuose, prie pastatų ar kitose sudėtingose vietose.
-2. **Medžių genėjimas** — Profesionalus genėjimas ir lajos formavimas, kad medis liktų sveikas ir gražus.
-3. **Pavojingų medžių šalinimas** — Avarinių ar pavojų keliančių medžių pjovimas šalia pastatų, elektros linijų ar kitų kliūčių.
-4. **Kelmų naikinimas** — Kelmų frezavimas arba išrovimas, kad teritorija būtų paruošta tolimesniems darbams.
-5. **Darbai su autobokšteliu** — Aukštuminiai darbai iki 20 metrų naudojant nuosavą autobokštelį.
-6. **Aukštuminiai darbai** — Darbai aukštyje naudojant profesionalią alpinizmo įrangą sudėtingose vietose.
-7. **Aplinkos tvarkymas** — Šakų smulkinimas, medienos išvežimas ir teritorijos sutvarkymas po darbų.
-8. **Sklypų valymas** — Apaugusių sklypų, gyvatvorių ir po audrų nuvirtusių medžių tvarkymas.
+1. **Medžių genėjimas** — Profesionalus genėjimas ir lajos formavimas, kad medis liktų sveikas ir gražus.
+2. **Pavojingų medžių šalinimas** — Avarinių ar pavojų keliančių medžių pjovimas šalia pastatų, elektros linijų ar kitų kliūčių. *(featured)*
+3. **Kelmų naikinimas** — Kelmų frezavimas arba išrovimas, kad teritorija būtų paruošta tolimesniems darbams.
+4. **Darbai su autobokšteliu** — Aukštuminiai darbai iki 20 metrų naudojant nuosavą autobokštelį. *(featured)*
+5. **Aukštuminiai darbai** — Darbai aukštyje naudojant profesionalią alpinizmo įrangą sudėtingose vietose.
+6. **Aplinkos tvarkymas** — Sklypų tvarkymas, gyvatvorių grąžinimas, po audros nuvirtusių medžių tvarkymas, šakų ir medienos išvežimas Kaune ir Kauno rajone fiskaru, teritorijos sutvarkymas po darbų.
+7. **Sklypų valymas** — Apaugusių sklypų, gyvatvorių ir po audrų nuvirtusių medžių tvarkymas.
+
+> **Content rule:** No shredding/smulkinimas references anywhere on site — client sold the shredder (smulkintuvas). Exception: About section P1 uses "susmulkinsime" in the client's own voice (refers to stacking, not machine shredding).
 
 ### 4.6 Gallery — "Darbų galerija"
 
 - H2: `Darbų galerija` / Eyebrow: `MŪSŲ DARBAI`
 - **Masonry CSS Grid** (4 cols desktop, 2 tablet, 1 mobile). First item (`gallery__item--tall`) spans 2 rows at ≥1024px — featured hero image gives the eye a landing point.
-- 8 images currently: `arbor2.jpg`–`arbor9.jpg` (placeholders, client to supply).
-- ⚠️ **Pending:** client to drop additional photos from paslaugos.lt into `assets/images/gallery/` — next session will integrate them and renumber the grid for visual balance.
+- 12 real photos in `assets/images/gallery/`. All captions and alt text unified to: `ArbCut atliktų darbų nuotrauka`.
 - Lightbox: vanilla JS, keyboard nav, touch swipe.
-- Caption overlay on hover. Exact captions: **placeholder, client to confirm**.
 
 ### 4.7 Why ArbCut (NEW — competitor doesn't have this)
 
@@ -150,7 +151,7 @@ Cards (titles + descriptions locked from competitor, lightly refined):
 - Four-up row of trust points, each with a small icon:
   1. **Saugu** — Dirbame naudodami profesionalią alpinizmo įrangą ir laikomės visų saugos reikalavimų.
   2. **Atsakingai** — Už kiekvieną darbą atsakome patys, nuo pradžios iki pabaigos.
-  3. **Švariai** — Po darbų išsivežame šakas ir medieną, paliekame sutvarkytą teritoriją.
+  3. **Švariai** — Po darbų galime išvešti šakas ir medieną, sutvarkyti aplinką pagal jūsų poreikius ir susitarimą.
   4. **Greitai** — Atvykstame operatyviai, ypač avarinėmis situacijomis.
 
 ### 4.8 FAQ — "Dažniausiai užduodami klausimai" (NEW)
@@ -162,7 +163,7 @@ Cards (titles + descriptions locked from competitor, lightly refined):
 
   1. **Ar dirbate visoje Lietuvoje?** — Taip, išvykstame į visus Lietuvos regionus. Didesniems objektams sutariame individualiai.
   2. **Ar galite dirbti prie elektros linijų?** — Taip, turime patirties dirbti pavojingose vietose šalia elektros linijų ir pastatų.
-  3. **Ar išsivežate medieną ir šakas?** — Taip, po darbų sutvarkome teritoriją ir išsivežame visas liekanas.
+  3. **Ar išsivežate medieną ir šakas?** — Taip, po darbų galime sutvarkyti teritoriją, išvešti šakas ir medieną Kaune ir Kauno rajone pagal jūsų poreikius ir susitarimą. Nes išvežu tik Kaune ir Kauno rajone, toliau su sunkia technika nevažiuojama. Toliau už Kauno raj. tai tik nupjaunu, palieku krūvoje šakas ir medieną.
   4. **Koks yra darbų įkainis?** — Kaina priklauso nuo darbų apimties ir sudėtingumo. Susisiekite — pateiksime individualų pasiūlymą.
   5. **Ar dirbate savaitgaliais?** — Taip, dirbame kasdien 08:00–18:00, įskaitant savaitgalius.
   6. **{{ PLACEHOLDER — klausti kliento, ar yra draudimas }}** — confirm with client whether he has liability insurance; if yes, add as an FAQ.
@@ -186,7 +187,7 @@ Cards (titles + descriptions locked from competitor, lightly refined):
 
 - Three columns on desktop, stacked on mobile:
   - **Column 1:** Logo, short tagline (`Kvalifikuotas arboristas aukštalipys su komanda`), Facebook icon linking to `https://www.facebook.com/MesGalimeTaiPadaryti/`.
-  - **Column 2 — Paslaugos:** list of 8 service names (anchors back to services section).
+  - **Column 2 — Paslaugos:** list of 7 service names (anchors back to services section). "Medžių pjovimas" removed.
   - **Column 3 — Kontaktai:** phone, email, working hours (`Pirmadienis–Sekmadienis: 08:00–18:00`).
 - Bottom bar: `© 2026 ArbCut. Visos teisės saugomos.`
 
@@ -341,7 +342,6 @@ The stacked logos are brand assets for the client — not rendered on the site i
 
 > These are marked with `{{ PLACEHOLDER }}` in the HTML. Client must provide before launch.
 
-- [ ] Years of experience number
 - [ ] Confirmation on insurance (to add to FAQ if yes)
 - [ ] Any testimonials? (would unlock an optional testimonials section)
 - [ ] Specific service-area towns if he wants local SEO pages later
