@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 80" role="img" aria-label="ArbCut">
+  <!-- Minimalist line-art tree: trunk + 4 branch pairs tapering upward -->
+  <g stroke="#B85B32" stroke-width="1.6" stroke-linecap="round" fill="none">
+    <line x1="25" y1="68" x2="25" y2="10"/>
+    <line x1="25" y1="56" x2="7"  y2="42"/>
+    <line x1="25" y1="56" x2="43" y2="42"/>
+    <line x1="25" y1="45" x2="11" y2="33"/>
+    <line x1="25" y1="45" x2="39" y2="33"/>
+    <line x1="25" y1="34" x2="14" y2="23"/>
+    <line x1="25" y1="34" x2="36" y2="23"/>
+    <line x1="25" y1="24" x2="17" y2="15"/>
+    <line x1="25" y1="24" x2="33" y2="15"/>
+  </g>
+  <!-- Wordmark: cream for use on dark backgrounds (hero, footer) -->
+  <text x="62" y="65" font-family="Playfair Display, Georgia, serif" font-weight="700" font-size="52" fill="#F4EFE6">ArbCut</text>
+</svg>

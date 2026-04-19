@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 240" role="img" aria-label="ArbCut">
+  <!-- Rust circle background for tree icon -->
+  <circle cx="100" cy="58" r="40" fill="#B85B32"/>
+  <!-- Tree drawn in dark green on rust circle -->
+  <g stroke="#1F3A2E" stroke-width="1.6" stroke-linecap="round" fill="none">
+    <line x1="100" y1="88" x2="100" y2="32"/>
+    <line x1="100" y1="76" x2="86"  y2="63"/>
+    <line x1="100" y1="76" x2="114" y2="63"/>
+    <line x1="100" y1="66" x2="89"  y2="55"/>
+    <line x1="100" y1="66" x2="111" y2="55"/>
+    <line x1="100" y1="55" x2="91"  y2="46"/>
+    <line x1="100" y1="55" x2="109" y2="46"/>
+    <line x1="100" y1="46" x2="93"  y2="38"/>
+    <line x1="100" y1="46" x2="107" y2="38"/>
+  </g>
+  <!-- Rust rule divider -->
+  <line x1="80" y1="115" x2="120" y2="115" stroke="#B85B32" stroke-width="1"/>
+  <!-- Wordmark: forest green on cream/white surface -->
+  <text x="100" y="168" font-family="Playfair Display, Georgia, serif" font-weight="700" font-size="44" fill="#1F3A2E" text-anchor="middle">ArbCut</text>
+  <!-- Tagline label -->
+  <text x="100" y="192" font-family="Playfair Display, Georgia, serif" font-weight="700" font-size="10" fill="#1F3A2E" opacity="0.7" text-anchor="middle" letter-spacing="5">ARBORISTAI</text>
+</svg>

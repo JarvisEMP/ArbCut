@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="lt">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>ArbCut — Medžių priežiūra ir aukštuminiai darbai Lietuvoje</title>
+  <meta name="description"
+    content="Kvalifikuotas arboristas aukštalipys. Medžių pjovimas, genėjimas, pavojingų medžių šalinimas, darbai su autobokšteliu iki 20 m. Skambinkite: +370 603 66901." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="ArbCut — Medžių priežiūra ir aukštuminiai darbai Lietuvoje" />
+  <meta property="og:description"
+    content="Kvalifikuotas arboristas aukštalipys. Medžių pjovimas, genėjimas, pavojingų medžių šalinimas, darbai su autobokšteliu iki 20 m." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/images/hero (2).jpg" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,700&family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "ArbCut",
+    "telephone": "+37060366901",
+    "email": "aukstuminiai.darbai@yahoo.com",
+    "openingHours": "Mo-Su 08:00-18:00",
+    "areaServed": { "@type": "Country", "name": "Lithuania" },
+    "description": "Kvalifikuoti arboristai aukštalipiai. Medžių pjovimas, genėjimas, pavojingų medžių šalinimas, darbai su autobokšteliu."
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- ============================================================
+       HEADER
+       ============================================================ -->
+  <header class="site-header" id="top" role="banner">
+    <div class="site-header__inner container">
+
+      <a href="#top" class="site-header__logo" aria-label="ArbCut — grįžti į viršų">
+        <img src="assets/logo-horizontal-light.svg" alt="ArbCut" class="site-header__logo-img site-header__logo--light" width="168" height="48" />
+        <img src="assets/logo-horizontal.svg" alt="" class="site-header__logo-img site-header__logo--dark" width="168" height="48" aria-hidden="true" />
+      </a>
+
+      <nav class="site-nav" aria-label="Pagrindinis meniu">
+        <ul class="site-nav__list" role="list">
+          <li><a href="#paslaugos" class="site-nav__link">Paslaugos</a></li>
+          <li><a href="#galerija" class="site-nav__link">Galerija</a></li>
+          <li><a href="#apie" class="site-nav__link">Apie</a></li>
+          <li><a href="#duk" class="site-nav__link">DUK</a></li>
+          <li><a href="#kontaktai" class="site-nav__link">Kontaktai</a></li>
+        </ul>
+      </nav>
+
+      <button type="button" class="btn btn--call site-header__cta" id="header-modal-trigger"
+        data-modal-trigger aria-haspopup="dialog">
+        Palikti užklausą
+      </button>
+
+      <button class="hamburger" aria-label="Atidaryti meniu" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="hamburger__bar"></span>
+        <span class="hamburger__bar"></span>
+        <span class="hamburger__bar"></span>
+      </button>
+
+    </div>
+  </header>
+
+  <!-- Mobile nav overlay -->
+  <div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Mobilusis meniu" hidden>
+    <button class="mobile-menu__close" aria-label="Uždaryti meniu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" aria-hidden="true">
+        <line x1="18" y1="6" x2="6" y2="18" />
+        <line x1="6" y1="6" x2="18" y2="18" />
+      </svg>
+    </button>
+    <nav>
+      <ul class="mobile-menu__list" role="list">
+        <li><a href="#paslaugos" class="mobile-menu__link">Paslaugos</a></li>
+        <li><a href="#galerija" class="mobile-menu__link">Galerija</a></li>
+        <li><a href="#apie" class="mobile-menu__link">Apie</a></li>
+        <li><a href="#duk" class="mobile-menu__link">DUK</a></li>
+        <li><a href="#kontaktai" class="mobile-menu__link">Kontaktai</a></li>
+      </ul>
+      <button type="button" class="btn btn--call btn--large mobile-menu__cta"
+        data-modal-trigger aria-haspopup="dialog">
+        Palikti užklausą
+      </button>
+    </nav>
+  </div>
+
+  <main>
+
+    <!-- ============================================================
+         HERO — solid forest-deep background, text left / photo right
+         ============================================================ -->
+    <section class="hero" id="hero" aria-label="Pagrindinis blokas">
+
+      <div class="hero__inner container">
+
+        <div class="hero__text">
+          <div class="hero__rule" aria-hidden="true"></div>
+          <h1 class="hero__headline js-reveal">
+            Medžių priežiūra aukštumoje — saugiai, atsakingai, iki galo.
+          </h1>
+          <p class="hero__subheadline js-reveal">
+            Kvalifikuotas arboristas aukštalipys su komanda. Pjovimas, genėjimas, pavojingų medžių šalinimas,
+            darbai su autobokšteliu iki&nbsp;20&nbsp;m.
+          </p>
+          <div class="hero__ctas js-reveal">
+            <a href="tel:+37060366901" class="btn btn--call btn--large">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 3.07 9.81 19.79 19.79 0 0 1 2 1.18 2 2 0 0 1 4 0h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 7.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+              </svg>
+              Skambinti +370&nbsp;603&nbsp;66901
+            </a>
+            <button type="button" class="btn btn--outline-light btn--large"
+              data-modal-trigger aria-haspopup="dialog">
+              Palikti užklausą
+            </button>
+          </div>
+          <p class="hero__trust js-reveal">
+            Veikiame visoje Lietuvoje&nbsp;•&nbsp;Dirbame saugiai ir švariai
+          </p>
+        </div>
+
+        <div class="hero__photo-col">
+          <img src="assets/images/hero (2).jpg" alt="ArbCut arboristas dirba aukštumoje" class="hero__photo" loading="eager" />
+        </div>
+
+      </div>
+
+      <div class="hero__scroll-indicator" aria-hidden="true">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 12 15 18 9" />
+        </svg>
+      </div>
+
+    </section>
+
+    <!-- ============================================================
+         CONTACT STRIP
+         ============================================================ -->
+    <section class="contact-strip" id="kontaktai-strip" aria-label="Greiti kontaktai">
+      <div class="container">
+        <div class="contact-strip__grid">
+
+          <a href="tel:+37060366901" class="contact-card">
+            <div class="contact-card__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 3.07 9.81 19.79 19.79 0 0 1 2 1.18 2 2 0 0 1 4 0h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 7.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+              </svg>
+            </div>
+            <div class="contact-card__body">
+              <span class="contact-card__label">Skambinkite</span>
+              <span class="contact-card__value">+370 603 66901</span>
+            </div>
+          </a>
+
+          <a href="mailto:aukstuminiai.darbai@yahoo.com" class="contact-card">
+            <div class="contact-card__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="4" width="20" height="16" rx="2" />
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+              </svg>
+            </div>
+            <div class="contact-card__body">
+              <span class="contact-card__label">El. paštas</span>
+              <span class="contact-card__value">aukstuminiai.darbai@yahoo.com</span>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         ABOUT
+         ============================================================ -->
+    <section class="about" id="apie" aria-label="Apie ArbCut">
+      <div class="container">
+        <div class="about__content">
+
+          <div class="about__rule js-reveal-scroll" aria-hidden="true"></div>
+          <span class="section-eyebrow js-reveal-scroll">APIE MUS</span>
+          <h2 class="about__title js-reveal-scroll">ARBCUT — medžių priežiūros meistrai</h2>
+          <p class="about__body js-reveal-scroll">
+            Esame kvalifikuoti arboristai, pasiruošę padėti įvairiuose medžių priežiūros ir aukštuminiuose darbuose.
+            Atliekame medžių pjovimą, genėjimą, lajos formavimą, pavojingų medžių šalinimą prie pastatų ar elektros
+            linijų. Naikiname kelmus, tvarkome aplinką, valome lietvamzdžius, montuojame reklamines iškabas, šaliname
+            varveklius bei atliekame kitus darbus aukštyje naudodami alpinizmo įrangą arba nuosavą autobokštelį.
+          </p>
+          <p class="about__body js-reveal-scroll">
+            Dirbame saugiai, atsakingai ir pasirūpiname visais darbais nuo pradžios iki pabaigos.
+          </p>
+
+          <div class="about__stats js-reveal-scroll">
+            <div class="about__stat">
+              <strong>15+</strong>
+              <span>metų patirtis</span>
+            </div>
+            <div class="about__stat">
+              <strong>20m</strong>
+              <span>Aukštyje su nuosavu autobokšteliu</span>
+            </div>
+            <div class="about__stat">
+              <strong>LT</strong>
+              <span>Išvykstame visur Lietuvoje</span>
+            </div>
+          </div>
+
+          <a href="#paslaugos" class="btn btn--forest js-reveal-scroll">Žiūrėti paslaugas</a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SERVICES
+         ============================================================ -->
+    <section class="services" id="paslaugos" aria-label="Paslaugos">
+      <div class="container">
+        <div class="section-header js-reveal-scroll">
+          <span class="section-eyebrow">KĄ DAROME</span>
+          <h2 class="section-title">Paslaugos</h2>
+        </div>
+
+        <!-- Featured 3: money-making services with background photos -->
+        <div class="services__featured">
+
+          <article class="service-card service-card--featured js-reveal-scroll"
+            style="background-image: url('assets/images/Work1.jpg')">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"
+                stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="22" x2="12" y2="15" />
+                <path d="M7 15l5-8 5 8" />
+                <path d="M9.5 11l2.5-4.5 2.5 4.5" />
+                <line x1="5" y1="19" x2="19" y2="19" stroke-dasharray="2.5 2" />
+              </svg>
+            </div>
+            <div class="service-card__featured-body">
+              <h3 class="service-card__title">Medžių pjovimas</h3>
+              <p class="service-card__desc">Saugus medžių pjovimas įvairiomis sąlygomis — kiemuose, prie pastatų ar
+                kitose sudėtingose vietose.</p>
+            </div>
+          </article>
+
+          <article class="service-card service-card--featured js-reveal-scroll"
+            style="background-image: url('assets/images/Laidai.jpg')">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" />
+                <line x1="12" y1="9" x2="12" y2="13" />
+                <line x1="12" y1="17" x2="12.01" y2="17" stroke-width="2.5" />
+              </svg>
+            </div>
+            <div class="service-card__featured-body">
+              <h3 class="service-card__title">Pavojingų medžių šalinimas</h3>
+              <p class="service-card__desc">Avarinių ar pavojų keliančių medžių pjovimas šalia pastatų, elektros
+                linijų ar kitų kliūčių.</p>
+            </div>
+          </article>
+
+          <article class="service-card service-card--featured js-reveal-scroll"
+            style="background-image: url('assets/images/Technika.jpg')">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="1" y="12" width="11" height="7" rx="1" />
+                <path d="M12 15.5l3-5 3 3.5v4H12" />
+                <circle cx="5" cy="19" r="2" />
+                <circle cx="17" cy="19" r="2" />
+                <line x1="7" y1="12" x2="7" y2="7" />
+                <line x1="5" y1="7" x2="9" y2="7" />
+              </svg>
+            </div>
+            <div class="service-card__featured-body">
+              <h3 class="service-card__title">Darbai su autobokšteliu</h3>
+              <p class="service-card__desc">Aukštuminiai darbai iki 20 metrų naudojant nuosavą autobokštelį.</p>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Secondary 5: supporting services -->
+        <div class="services__grid services__grid--secondary">
+
+          <article class="service-card js-reveal-scroll">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="6" cy="6" r="3" />
+                <circle cx="6" cy="18" r="3" />
+                <line x1="20" y1="4" x2="8.12" y2="15.88" />
+                <line x1="14.47" y1="14.48" x2="20" y2="20" />
+                <line x1="8.12" y1="8.12" x2="12" y2="12" />
+              </svg>
+            </div>
+            <h3 class="service-card__title">Medžių genėjimas</h3>
+            <p class="service-card__desc">Profesionalus genėjimas ir lajos formavimas, kad medis liktų sveikas ir
+              gražus.</p>
+          </article>
+
+          <article class="service-card js-reveal-scroll">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"
+                stroke-linecap="round" stroke-linejoin="round">
+                <ellipse cx="12" cy="10" rx="8" ry="4.5" />
+                <ellipse cx="12" cy="10" rx="4.5" ry="2.5" />
+                <line x1="12" y1="10" x2="12" y2="14.5" />
+                <path d="M8 14c-1.5 2.5-2.5 5-3 7" />
+                <path d="M16 14c1.5 2.5 2.5 5 3 7" />
+              </svg>
+            </div>
+            <h3 class="service-card__title">Kelmų naikinimas</h3>
+            <p class="service-card__desc">Kelmų frezavimas arba išrovimas, kad teritorija būtų paruošta tolimesniems
+              darbams.</p>
+          </article>
+
+          <article class="service-card js-reveal-scroll">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="3,20 7,11 12,15 16,8 21,20" />
+                <line x1="3" y1="20" x2="21" y2="20" />
+              </svg>
+            </div>
+            <h3 class="service-card__title">Aukštuminiai darbai</h3>
+            <p class="service-card__desc">Darbai aukštyje naudojant profesionalią alpinizmo įrangą sudėtingose
+              vietose.</p>
+          </article>
+
+          <article class="service-card js-reveal-scroll">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10z" />
+                <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12" />
+              </svg>
+            </div>
+            <h3 class="service-card__title">Aplinkos tvarkymas</h3>
+            <p class="service-card__desc">Šakų smulkinimas, medienos išvežimas ir teritorijos sutvarkymas po darbų.</p>
+          </article>
+
+          <article class="service-card js-reveal-scroll">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="7" height="7" rx="1" />
+                <rect x="14" y="3" width="7" height="7" rx="1" />
+                <rect x="14" y="14" width="7" height="7" rx="1" />
+                <rect x="3" y="14" width="7" height="7" rx="1" />
+              </svg>
+            </div>
+            <h3 class="service-card__title">Sklypų valymas</h3>
+            <p class="service-card__desc">Apaugusių sklypų, gyvatvorių ir po audrų nuvirtusių medžių tvarkymas.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         GALLERY
+         ============================================================ -->
+    <section class="gallery" id="galerija" aria-label="Darbų galerija">
+      <div class="container">
+        <div class="section-header js-reveal-scroll">
+          <span class="section-eyebrow">MŪSŲ DARBAI</span>
+          <h2 class="section-title">Darbų galerija</h2>
+        </div>
+      </div>
+
+      <div class="gallery__grid" role="list" aria-label="Darbų nuotraukos">
+
+        <button class="gallery__item gallery__item--tall" role="listitem"
+          data-src="assets/images/gallery/469310067_1019557870184363_5116671743805972945_n.jpg"
+          data-caption="ArbCut darbai aukštumoje"
+          aria-label="Atidaryti nuotrauką: ArbCut darbai aukštumoje">
+          <img src="assets/images/gallery/469310067_1019557870184363_5116671743805972945_n.jpg"
+            alt="ArbCut darbai aukštumoje" loading="lazy" />
+          <span class="gallery__caption">Darbai aukštumoje</span>
+        </button>
+
+        <button class="gallery__item" role="listitem" data-src="assets/images/gallery/hero.jpg"
+          data-caption="ArbCut arboristo darbai"
+          aria-label="Atidaryti nuotrauką: ArbCut arboristo darbai">
+          <img src="assets/images/gallery/hero.jpg" alt="ArbCut arboristo darbai" loading="lazy" />
+          <span class="gallery__caption">ArbCut darbai</span>
+        </button>
+
+        <button class="gallery__item" role="listitem" data-src="assets/images/gallery/Geras namas.jpg"
+          data-caption="Sutvarkyta aplinka prie namo"
+          aria-label="Atidaryti nuotrauką: Sutvarkyta aplinka prie namo">
+          <img src="assets/images/gallery/Geras namas.jpg" alt="Sutvarkyta aplinka prie namo" loading="lazy" />
+          <span class="gallery__caption">Sutvarkyta aplinka</span>
+        </button>
+
+        <button class="gallery__item" role="listitem"
+          data-src="assets/images/gallery/485918178_1101636811976468_3805495665804527561_n.jpg"
+          data-caption="ArbCut medžių priežiūros darbai"
+          aria-label="Atidaryti nuotrauką: Medžių priežiūros darbai">
+          <img src="assets/images/gallery/485918178_1101636811976468_3805495665804527561_n.jpg"
+            alt="ArbCut medžių priežiūros darbai" loading="lazy" />
+          <span class="gallery__caption">Medžių priežiūra</span>
+        </button>
+
+        <button class="gallery__item gallery__item--tall" role="listitem"
+          data-src="assets/images/gallery/Laidai2.jpg"
+          data-caption="Darbai šalia elektros linijų"
+          aria-label="Atidaryti nuotrauką: Darbai šalia elektros linijų">
+          <img src="assets/images/gallery/Laidai2.jpg" alt="Darbai šalia elektros linijų" loading="lazy" />
+          <span class="gallery__caption">Darbai prie elektros linijų</span>
+        </button>
+
+        <button class="gallery__item" role="listitem"
+          data-src="assets/images/gallery/485962117_1101637068643109_4685495271631377000_n.jpg"
+          data-caption="Medžių šalinimas šalia pastato"
+          aria-label="Atidaryti nuotrauką: Medžių šalinimas šalia pastato">
+          <img src="assets/images/gallery/485962117_1101637068643109_4685495271631377000_n.jpg"
+            alt="Medžių šalinimas šalia pastato" loading="lazy" />
+          <span class="gallery__caption">Šalinimas prie pastato</span>
+        </button>
+
+        <button class="gallery__item" role="listitem" data-src="assets/images/gallery/wrok3.jpg"
+          data-caption="ArbCut atliktų darbų nuotrauka"
+          aria-label="Atidaryti nuotrauką: ArbCut darbai">
+          <img src="assets/images/gallery/wrok3.jpg" alt="ArbCut atliktų darbų nuotrauka" loading="lazy" />
+          <span class="gallery__caption">ArbCut darbai</span>
+        </button>
+
+        <button class="gallery__item" role="listitem"
+          data-src="assets/images/gallery/58933234_2410033542375070_8553843298911911936_n.jpg"
+          data-caption="Medžio genėjimas ir lajos formavimas"
+          aria-label="Atidaryti nuotrauką: Medžio genėjimas">
+          <img src="assets/images/gallery/58933234_2410033542375070_8553843298911911936_n.jpg"
+            alt="Medžio genėjimas ir lajos formavimas" loading="lazy" />
+          <span class="gallery__caption">Genėjimas ir lajos formavimas</span>
+        </button>
+
+        <button class="gallery__item" role="listitem" data-src="assets/images/gallery/Geras namas2.jpg"
+          data-caption="Aplinkos tvarkymas prie namo"
+          aria-label="Atidaryti nuotrauką: Aplinkos tvarkymas prie namo">
+          <img src="assets/images/gallery/Geras namas2.jpg" alt="Aplinkos tvarkymas prie namo" loading="lazy" />
+          <span class="gallery__caption">Aplinkos tvarkymas</span>
+        </button>
+
+        <button class="gallery__item" role="listitem"
+          data-src="assets/images/gallery/60338341_2429874783724279_1877836238128414720_n.jpg"
+          data-caption="Arboristo darbai su alpinizmo įranga"
+          aria-label="Atidaryti nuotrauką: Arboristo darbai">
+          <img src="assets/images/gallery/60338341_2429874783724279_1877836238128414720_n.jpg"
+            alt="Arboristo darbai su alpinizmo įranga" loading="lazy" />
+          <span class="gallery__caption">Aukštuminiai darbai</span>
+        </button>
+
+        <button class="gallery__item" role="listitem"
+          data-src="assets/images/gallery/51851939_2281558311889261_4616690763428790272_n.jpg"
+          data-caption="Pavojingo medžio šalinimas"
+          aria-label="Atidaryti nuotrauką: Pavojingo medžio šalinimas">
+          <img src="assets/images/gallery/51851939_2281558311889261_4616690763428790272_n.jpg"
+            alt="Pavojingo medžio šalinimas" loading="lazy" />
+          <span class="gallery__caption">Pavojingo medžio šalinimas</span>
+        </button>
+
+        <button class="gallery__item" role="listitem"
+          data-src="assets/images/gallery/67232092_2558578524187237_1548003215314780160_n.jpg"
+          data-caption="Sklypų valymas ir tvarkymas"
+          aria-label="Atidaryti nuotrauką: Sklypų valymas">
+          <img src="assets/images/gallery/67232092_2558578524187237_1548003215314780160_n.jpg"
+            alt="Sklypų valymas ir tvarkymas" loading="lazy" />
+          <span class="gallery__caption">Sklypų valymas</span>
+        </button>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         WHY ARBCUT
+         ============================================================ -->
+    <section class="why-arbcut" id="kodel" aria-label="Kodėl ArbCut">
+      <div class="container">
+        <div class="section-header section-header--light js-reveal-scroll">
+          <span class="section-eyebrow section-eyebrow--light">MŪSŲ PRIVALUMAI</span>
+          <h2 class="section-title section-title--light">Kodėl ArbCut?</h2>
+        </div>
+
+        <div class="why__grid">
+
+          <div class="why-card js-reveal-scroll">
+            <div class="why-card__icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              </svg>
+            </div>
+            <h3 class="why-card__title">Saugu</h3>
+            <p class="why-card__desc">Dirbame naudodami profesionalią alpinizmo įrangą ir laikomės visų saugos
+              reikalavimų.</p>
+          </div>
+
+          <div class="why-card js-reveal-scroll">
+            <div class="why-card__icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+            </div>
+            <h3 class="why-card__title">Atsakingai</h3>
+            <p class="why-card__desc">Už kiekvieną darbą atsakome patys, nuo pradžios iki pabaigos.</p>
+          </div>
+
+          <div class="why-card js-reveal-scroll">
+            <div class="why-card__icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 6l6 6-6 6" />
+                <path d="M13 6l6 6-6 6" />
+              </svg>
+            </div>
+            <h3 class="why-card__title">Švariai</h3>
+            <p class="why-card__desc">Po darbų išsivežame šakas ir medieną, paliekame sutvarkytą teritoriją.</p>
+          </div>
+
+          <div class="why-card js-reveal-scroll">
+            <div class="why-card__icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10" />
+                <polyline points="12 6 12 12 16 14" />
+              </svg>
+            </div>
+            <h3 class="why-card__title">Greitai</h3>
+            <p class="why-card__desc">Atvykstame operatyviai, ypač avarinėmis situacijomis.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         FAQ
+         ============================================================ -->
+    <section class="faq" id="duk" aria-label="Dažniausiai užduodami klausimai">
+      <div class="container">
+        <div class="section-header js-reveal-scroll">
+          <span class="section-eyebrow">DUK</span>
+          <h2 class="section-title">Dažniausiai užduodami klausimai</h2>
+        </div>
+
+        <div class="faq__list" role="list">
+
+          <details class="faq__item js-reveal-scroll" role="listitem">
+            <summary class="faq__question">
+              Ar dirbate visoje Lietuvoje?
+              <svg class="faq__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </summary>
+            <div class="faq__answer">
+              <p>Taip, išvykstame į visus Lietuvos regionus. Didesniems objektams sutariame individualiai.</p>
+            </div>
+          </details>
+
+          <details class="faq__item js-reveal-scroll" role="listitem">
+            <summary class="faq__question">
+              Ar galite dirbti prie elektros linijų?
+              <svg class="faq__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </summary>
+            <div class="faq__answer">
+              <p>Taip, turime patirties dirbti pavojingose vietose šalia elektros linijų ir pastatų.</p>
+            </div>
+          </details>
+
+          <details class="faq__item js-reveal-scroll" role="listitem">
+            <summary class="faq__question">
+              Ar išsivežate medieną ir šakas?
+              <svg class="faq__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </summary>
+            <div class="faq__answer">
+              <p>Taip, po darbų sutvarkome teritoriją ir išsivežame visas liekanas.</p>
+            </div>
+          </details>
+
+          <details class="faq__item js-reveal-scroll" role="listitem">
+            <summary class="faq__question">
+              Koks yra darbų įkainis?
+              <svg class="faq__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </summary>
+            <div class="faq__answer">
+              <p>Kaina priklauso nuo darbų apimties ir sudėtingumo. Susisiekite — pateiksime individualų pasiūlymą.</p>
+            </div>
+          </details>
+
+          <details class="faq__item js-reveal-scroll" role="listitem">
+            <summary class="faq__question">
+              Ar dirbate savaitgaliais?
+              <svg class="faq__chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </summary>
+            <div class="faq__answer">
+              <p>Taip, dirbame kasdien 08:00–18:00, įskaitant savaitgalius.</p>
+            </div>
+          </details>
+
+          <!-- PLACEHOLDER: client to confirm whether they carry liability insurance -->
+          <!-- <details class="faq__item" ...>Ar turite draudimą?</details> -->
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CONTACT FORM
+         ============================================================ -->
+    <section class="contact-form-section" id="kontaktai" aria-label="Užklausos forma">
+      <div class="container">
+
+        <div class="contact-form__header js-reveal-scroll">
+          <span class="section-eyebrow">SUSISIEKTI</span>
+          <h2 class="section-title">Palikite užklausą</h2>
+          <p class="contact-form__subtext">
+            Atsakysime per vieną darbo dieną. Arba skambinkite tiesiogiai:
+            <a href="tel:+37060366901" class="contact-form__phone-link">+370 603 66901</a>.
+          </p>
+        </div>
+
+        <!--
+          Web3Forms: sign up at https://web3forms.com to get a free access key.
+          Replace YOUR_WEB3FORMS_ACCESS_KEY below with the key tied to aukstuminiai.darbai@yahoo.com.
+          The redirect URL must be absolute — update it once the domain is live.
+        -->
+        <form class="contact-form js-reveal-scroll" action="https://api.web3forms.com/submit" method="POST" novalidate
+          id="contact-form">
+          <!-- Web3Forms config -->
+          <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY" />
+          <input type="hidden" name="subject" value="Nauja užklausa iš ArbCut svetainės" />
+          <input type="hidden" name="from_name" value="ArbCut svetainė" />
+          <!-- Redirect after successful submit — update to absolute URL when domain is live -->
+          <input type="hidden" name="redirect" value="success.html" />
+          <!-- Honeypot spam protection -->
+          <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" aria-hidden="true" />
+
+          <div class="contact-form__row">
+            <div class="form-field">
+              <label class="form-field__label" for="f-name">
+                Vardas <span class="form-field__required" aria-hidden="true">*</span>
+              </label>
+              <input class="form-field__input" type="text" id="f-name" name="Vardas" autocomplete="given-name" required
+                placeholder="Vardas Pavardė" />
+            </div>
+
+            <div class="form-field">
+              <label class="form-field__label" for="f-contact">
+                Telefonas arba el. paštas <span class="form-field__required" aria-hidden="true">*</span>
+              </label>
+              <input class="form-field__input" type="text" id="f-contact" name="Kontaktai" autocomplete="tel" required
+                placeholder="+370 6xx xxxxx arba el. paštas" />
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label class="form-field__label" for="f-city">
+              Miestas / vietovė
+            </label>
+            <input class="form-field__input" type="text" id="f-city" name="Miestas" autocomplete="address-level2"
+              placeholder="pvz. Vilnius, Kaunas…" />
+          </div>
+
+          <div class="form-field">
+            <label class="form-field__label" for="f-message">
+              Žinutė <span class="form-field__required" aria-hidden="true">*</span>
+            </label>
+            <textarea class="form-field__input form-field__input--textarea" id="f-message" name="Žinutė" required
+              rows="5" placeholder="Trumpai aprašykite, ko reikia — medžio dydis, vieta, skubumas…"></textarea>
+          </div>
+
+          <div class="contact-form__footer">
+            <button type="submit" class="btn btn--call btn--large contact-form__submit">
+              <svg class="btn__icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="22" y1="2" x2="11" y2="13" />
+                <polygon points="22 2 15 22 11 13 2 9 22 2" />
+              </svg>
+              Siųsti užklausą
+            </button>
+            <p class="contact-form__note">
+              * — privalomi laukai
+            </p>
+          </div>
+
+        </form>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="site-footer__inner container">
+
+      <div class="site-footer__grid">
+
+        <div class="site-footer__brand">
+          <a href="#top" class="site-footer__logo-link" aria-label="ArbCut — grįžti į viršų">
+            <img src="assets/logo-horizontal-light.svg" alt="ArbCut" class="site-footer__logo-img" width="126" height="36" />
+          </a>
+          <p class="site-footer__tagline">Kvalifikuotas arboristas aukštalipys su komanda</p>
+          <a href="https://www.facebook.com/MesGalimeTaiPadaryti/" class="site-footer__social" target="_blank"
+            rel="noopener noreferrer" aria-label="ArbCut Facebook puslapis">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+            </svg>
+            Facebook
+          </a>
+        </div>
+
+        <div class="site-footer__col">
+          <h3 class="site-footer__heading">Paslaugos</h3>
+          <ul class="site-footer__links" role="list">
+            <li><a href="#paslaugos">Medžių pjovimas</a></li>
+            <li><a href="#paslaugos">Medžių genėjimas</a></li>
+            <li><a href="#paslaugos">Pavojingų medžių šalinimas</a></li>
+            <li><a href="#paslaugos">Kelmų naikinimas</a></li>
+            <li><a href="#paslaugos">Darbai su autobokšteliu</a></li>
+            <li><a href="#paslaugos">Aukštuminiai darbai</a></li>
+            <li><a href="#paslaugos">Aplinkos tvarkymas</a></li>
+            <li><a href="#paslaugos">Sklypų valymas</a></li>
+          </ul>
+        </div>
+
+        <div class="site-footer__col">
+          <h3 class="site-footer__heading">Kontaktai</h3>
+          <ul class="site-footer__contact" role="list">
+            <li>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 3.07 9.81 19.79 19.79 0 0 1 2 1.18 2 2 0 0 1 4 0h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 7.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+              </svg>
+              <a href="tel:+37060366901">+370 603 66901</a>
+            </li>
+            <li>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="4" width="20" height="16" rx="2" />
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+              </svg>
+              <a href="mailto:aukstuminiai.darbai@yahoo.com">aukstuminiai.darbai@yahoo.com</a>
+            </li>
+            <li>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10" />
+                <polyline points="12 6 12 12 16 14" />
+              </svg>
+              <span>Pirmadienis–Sekmadienis: 08:00–18:00</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="site-footer__bottom">
+        <p>© 2026 ArbCut. Visos teisės saugomos.</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       STICKY MOBILE CALL BUTTON
+       ============================================================ -->
+  <a href="tel:+37060366901" class="sticky-call" id="sticky-call" aria-label="Skambinti ArbCut">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+      stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path
+        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 3.07 9.81 19.79 19.79 0 0 1 2 1.18 2 2 0 0 1 4 0h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 7.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+    </svg>
+  </a>
+
+  <!-- ============================================================
+       LIGHTBOX
+       ============================================================ -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Nuotraukos peržiūra" hidden>
+    <button class="lightbox__close" aria-label="Uždaryti">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" aria-hidden="true">
+        <line x1="18" y1="6" x2="6" y2="18" />
+        <line x1="6" y1="6" x2="18" y2="18" />
+      </svg>
+    </button>
+    <button class="lightbox__prev" aria-label="Ankstesnė nuotrauka">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <polyline points="15 18 9 12 15 6" />
+      </svg>
+    </button>
+    <div class="lightbox__stage">
+      <img class="lightbox__img" src="" alt="" />
+      <p class="lightbox__caption"></p>
+    </div>
+    <button class="lightbox__next" aria-label="Kita nuotrauka">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <polyline points="9 18 15 12 9 6" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- ============================================================
+       INQUIRY MODAL
+       ============================================================ -->
+  <div class="inquiry-modal" id="inquiry-modal" role="dialog" aria-modal="true"
+    aria-labelledby="modal-title" hidden>
+
+    <div class="inquiry-modal__backdrop"></div>
+
+    <div class="inquiry-modal__panel">
+      <button class="inquiry-modal__close" aria-label="Uždaryti">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18" />
+          <line x1="6" y1="6" x2="18" y2="18" />
+        </svg>
+      </button>
+
+      <div>
+        <h2 class="inquiry-modal__title" id="modal-title">Palikti užklausą</h2>
+        <p class="inquiry-modal__sub">
+          Atsakysime per vieną darbo dieną. Arba skambinkite tiesiogiai:
+          <a href="tel:+37060366901" class="contact-form__phone-link">+370&nbsp;603&nbsp;66901</a>.
+        </p>
+      </div>
+
+      <form class="contact-form inquiry-modal__form" action="https://api.web3forms.com/submit" method="POST"
+        novalidate id="modal-contact-form">
+        <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY" />
+        <input type="hidden" name="subject" value="Nauja užklausa iš ArbCut svetainės (modalas)" />
+        <input type="hidden" name="from_name" value="ArbCut svetainė" />
+        <input type="hidden" name="redirect" value="success.html" />
+        <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" aria-hidden="true" />
+
+        <div class="contact-form__row">
+          <div class="form-field">
+            <label class="form-field__label" for="m-name">
+              Vardas <span class="form-field__required" aria-hidden="true">*</span>
+            </label>
+            <input class="form-field__input" type="text" id="m-name" name="Vardas" autocomplete="given-name"
+              required placeholder="Vardas Pavardė" />
+          </div>
+          <div class="form-field">
+            <label class="form-field__label" for="m-contact">
+              Telefonas arba el. paštas <span class="form-field__required" aria-hidden="true">*</span>
+            </label>
+            <input class="form-field__input" type="text" id="m-contact" name="Kontaktai" autocomplete="tel"
+              required placeholder="+370 6xx xxxxx arba el. paštas" />
+          </div>
+        </div>
+
+        <div class="form-field">
+          <label class="form-field__label" for="m-city">Miestas / vietovė</label>
+          <input class="form-field__input" type="text" id="m-city" name="Miestas" autocomplete="address-level2"
+            placeholder="pvz. Vilnius, Kaunas…" />
+        </div>
+
+        <div class="form-field">
+          <label class="form-field__label" for="m-message">
+            Žinutė <span class="form-field__required" aria-hidden="true">*</span>
+          </label>
+          <textarea class="form-field__input form-field__input--textarea" id="m-message" name="Žinutė"
+            required rows="4" placeholder="Trumpai aprašykite, ko reikia…"></textarea>
+        </div>
+
+        <div class="contact-form__footer">
+          <button type="submit" class="btn btn--call btn--large contact-form__submit">
+            <svg class="btn__icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="22" y1="2" x2="11" y2="13" />
+              <polygon points="22 2 15 22 11 13 2 9 22 2" />
+            </svg>
+            Siųsti užklausą
+          </button>
+          <p class="contact-form__note">* — privalomi laukai</p>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+
+</body>
+
+</html>
